@@ -1,0 +1,55 @@
+{
+  "name": "制服フォトフレームアプリ",
+  "short_name": "制服カメラ",
+  "description": "制服の画像をオーバーレイで表示して実際に制服を着ているような写真を撮影・保存できるアプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#1e1e1e",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "ja",
+  "dir": "ltr",
+  "categories": ["photo", "camera", "entertainment"],
+  "permissions": [
+    "camera",
+    "microphone"
+  ],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMxZTFlMWUiLz4KPHBhdGggZD0iTTk2IDQ4QzEyNC4xIDQ4IDE0NCA2Ny45IDE0NCA5NkMxNDQgMTI0LjEgMTI0LjEgMTQ0IDk2IDE0NEM2Ny45IDE0NCA0OCAxMjQuMSA0OCA5NkM0OCA2Ny45IDY3LjkgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjEiLz4KPHBhdGggZD0iTTk2IDY0QzExNS42IDY0IDEyOCA3Ni40IDEyOCA5NkMxMjggMTE1LjYgMTE1LjYgMTI4IDk2IDEyOEM3Ni40IDEyOCA2NCAxMTUuNiA2NCA5NkM2NCA3Ni40IDc2LjQgNjQgOTYgNjRaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iMTYiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjgwIiB5PSIzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMxZTFlMWUiLz4KPHBhdGggZD0iTTI1NiAxMjhDMzMyLjMgMTI4IDM4NCAxNzkuNyAzODQgMjU2QzM4NCAzMzIuMyAzMzIuMyAzODQgMjU2IDM4NEMxNzkuNyAzODQgMTI4IDMzMi4zIDEyOCAyNTZDMTI4IDE3OS43IDE3OS43IDEyOCAyNTYgMTI4WiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4xIi8+CjxwYXRoIGQ9Ik0yNTYgMTcwQzMwOC41IDE3MCAzNDIgMjAzLjUgMzQyIDI1NkMzNDIgMzA4LjUgMzA4LjUgMzQyIDI1NiAzNDJDMjAzLjUgMzQyIDE3MCAzMDguNSAxNzAgMjU2QzE3MCAyMDMuNSAyMDMuNSAxNzAgMjU2IDE3MFoiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjQyIiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIyMTMiIHk9Ijg1IiB3aWR0aD0iODYiIGhlaWdodD0iMjEiIHJ4PSIxMCIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+Cjwvc3ZnPg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "カメラ起動",
+      "short_name": "カメラ",
+      "description": "カメラを起動して制服撮影",
+      "url": "/?shortcut=camera",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiMxZTFlMWUiLz4KPGNpcmNsZSBjeD0iNDgiIGN5PSI0OCIgcj0iMjQiIGZpbGw9IndoaXRlIi8+CjwvcmVnPg==",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjU2OCIgdmlld0JveD0iMCAwIDMyMCA1NjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iNTY4IiByeD0iMjQiIGZpbGw9IiMwMDAwMDAiLz4KPHRleHQgeD0iMTYwIiB5PSIyODQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4Ij7liLbmnI3jgqvjg6Hjg6njgqLjg5fjg6o8L3RleHQ+Cjwvc3ZnPg==",
+      "sizes": "320x568",
+      "type": "image/svg+xml",
+      "label": "メイン画面"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "protocol_handlers": []
+}

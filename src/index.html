@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制服フォトフレームアプリ</title>
+  <meta name="description" content="スマートフォン向けのフォトフレーム撮影アプリ。制服の画像をオーバーレイで表示して実際に制服を着ているような写真を撮影・保存できます。">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Feature Policy / Permissions Policy -->
+  <meta http-equiv="Permissions-Policy" content="camera=*, microphone=*, fullscreen=*, geolocation=(), payment=(), usb=()">
+  
+  <!-- iframe埋め込み対応 -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  
+  <!-- PWA設定 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <!-- セキュリティ設定 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; media-src 'self' blob:; connect-src 'self' https:; font-src 'self' data:;">
+  
+  <style>
+    /* 初期ローディング画面 */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    
+    .loading-content {
+      text-align: center;
+      color: white;
+    }
+    
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 16px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* アプリケーションのベーススタイル */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    #root {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- ローディング画面 -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <p>制服フォトフレームアプリを読み込み中...</p>
+    </div>
+  </div>
+  
+  <!-- React アプリケーションのルート -->
+  <div id="root"></div>
+  
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
